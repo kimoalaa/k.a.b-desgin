@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam+Pro:ital,wght@0,300;0,700;1,400&family=Fjalla+One&family=Koulen&family=Lalezar&family=Lobster&family=Noto+Kufi+Arabic:wght@400;500;600&family=Oleo+Script+Swash+Caps&family=Oxygen:wght@700&family=Pacifico&family=Poppins:wght@500&family=Rakkas&family=Roboto:wght@500&family=Signika+Negative:wght@400;600&family=Staatliches&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* start navbar */
+.nav{
+    z-index: 1;
+    width: 100%;
+    padding:10px 50px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Dangrek', cursive;
+    background-color:dodgerblue;
+    transition: 0.3s ease;
+}
+.nav .logo{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 35px;
+    transition: 0.3s ease;
+}
+.nav .logo:hover{
+    color: #eee;
+    letter-spacing: 1px;
+}
+.nav .list{
+    list-style: none;
+    display: flex;
+}
+.nav .list li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    padding-left: 40px;
+    transition: 0.4s ease;
+}
+.nav .list li a:hover{
+    color: #fff;
+}
+/* start home */
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("/back.jpg") center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    transition: 0.4s ease;
+}
+.home::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+.home .text{
+    z-index: 1;
+    font-size: 65px;
+    font-weight:bolder;
+    color: #fff;
+    font-family: 'Dangrek', cursive;
+    display:flex;
+    align-items: center;
+    padding-left:50px ;
+}
+.home .btn{
+    margin-left: 50px;
+    margin-top: 20px;
+    z-index: 1;
+    padding: 20px ;
+    height: 100px ;
+    width: 100px;
+    font-size: 30px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-family: 'Dangrek', cursive;
+    border-radius: 50%;
+    background-color: dodgerblue;
+    transition: 0.4s ease;
+    border: 2px solid dodgerblue;
+    cursor: pointer;
+}
+.home .btn:hover{
+    background: none;
+    color: dodgerblue;
+}
